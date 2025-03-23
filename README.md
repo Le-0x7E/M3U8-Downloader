@@ -3,6 +3,7 @@
 ### 简介
 这是一个简洁的M3U8视频下载脚本，只需要视频链接，便可以实现多线程下载TS片段，然后使用ffmpeg将片段合成.ts视频，最后再转化为.mp4视频。下载线程数量可以自定义，默认为32线程，速度还是挺快的，支持断点续传。
 ### 如何使用
+- 将ffmpeg.7z中的ffmpeg.exe解压至当前目录，或者本地安装后添加至系统环境变量，[FFmpeg仓库](https://github.com/FFmpeg/FFmpeg)
 - Python环境中安装requests库
 ```bash
 pip install -r requirements.txt
@@ -17,6 +18,7 @@ pythonw run.pyw
 ### Introduction
 This is a concise M3U8 video download script, which only needs a video link to achieve multi-threaded download of TS segments, and then uses ffmpeg to merge the segments into a .ts video, and finally converts it to a .mp4 video. The number of download threads can be customized, with a default of 32 threads, and the speed is still quite fast, supporting breakpoint resume.
 ### How to use
+- Extract ffmpeg.exe from ffmpeg.7z to the current directory, or install it locally and add it to the system environment variable, [FFmpeg repository](https://github.com/FFmpeg/FFmpeg)
 - Install the requests library in the Python environment
 ```bash
 pip install -r requirements.txt
